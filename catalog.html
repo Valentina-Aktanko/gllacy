@@ -119,7 +119,7 @@
 
       <ul class="pagination">
         <li class="pagination__item pagination__arrow pagination__arrow--prev">
-          <button>Назад</button>
+          <button type="button">Назад</button>
         </li>
         <li class="pagination__item pagination__item--current"><a>1</a></li>
         <li class="pagination__item"><a href="#">2</a></li>
@@ -127,7 +127,7 @@
         <li class="pagination__item"><a href="#">4</a></li>
         <li class="pagination__item"><a href="#">5</a></li>
         <li class="pagination__item pagination__arrow pagination__arrow--next">
-          <button>Вперед</button>
+          <button type="button">Вперед</button>
         </li>
       </ul>
     </main>
@@ -154,22 +154,22 @@
     </footer>
   </div>
 
-  <section class="modal modal-cart cart">
+  <section class="modal modal-cart">
     <h2 class="visually-hidden">Товары в корзине</h2>
-    <table class="cart__table">
-      <tr class="cart__row">
-        <td class="cart__col"><button class="cart__btn-del">Удалить товар</button></td>
-        <td class="cart__col"><img src="img/product1-cart.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-        <td class="cart__col">Пломбир с апельсиновым джемом</td>
-        <td class="cart__col">1,5 кг х <span class="cart__price">200 руб.</span></td>
-        <td class="cart__col">300 руб.</td>
+    <table class="modal-cart__table">
+      <tr class="modal-cart__row">
+        <td class="modal-cart__col"><button class="cart__del-btn" type="button">Удалить товар</button></td>
+        <td class="modal-cart__col"><img src="img/product1-cart.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+        <td class="modal-cart__col">Пломбир с апельсиновым джемом</td>
+        <td class="modal-cart__col">1,5 кг х <span class="cart__price">200 руб.</span></td>
+        <td class="modal-cart__col">300 руб.</td>
       </tr>
-      <tr class="cart__row">
-        <td class="cart__col"><button class="cart__btn-del">Удалить товар</button></td>
-        <td class="cart__col"><img src="img/product2-cart.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-        <td class="cart__col">Клубничный пломбир с присыпкой<br> из белого шоколада</td>
-        <td class="cart__col">1,5 кг х <span class="cart__price">200 руб.</span></td>
-        <td class="cart__col">450 руб.</td>
+      <tr class="modal-cart__row">
+        <td class="modal-cart__col"><button class="cart__del-btn" type="button">Удалить товар</button></td>
+        <td class="modal-cart__col"><img src="img/product2-cart.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+        <td class="modal-cart__col">Клубничный пломбир с присыпкой<br> из белого шоколада</td>
+        <td class="modal-cart__col">1,5 кг х <span class="cart__price">200 руб.</span></td>
+        <td class="modal-cart__col">450 руб.</td>
       </tr>
     </table>
     <p class="cart__total-price">Итого: 750 руб.</p>
