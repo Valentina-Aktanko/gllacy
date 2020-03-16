@@ -137,7 +137,13 @@
       <p class="subscribe__text">
         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <!-- Тут будет форма -->
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label class="visually-hidden" for="subscribe-form-email">Электронная почта</label>
+          <input id="subscribe-form-email" type="email" name="subscribe-form-email" value="" placeholder="Электронная почта">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
 
     <section class="contacts">
