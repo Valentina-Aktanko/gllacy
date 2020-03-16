@@ -48,7 +48,29 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма. -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label for="filter-form-select">Сортировка:</label>
+            <select id="filter-form-select" name="filter-form-select">
+              <option value="по популярности" selected>по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </p>
+          <p>
+            <label for="filter-form-range">Цена: 100 руб. – 500 руб.</label>
+            <input id="filter-form-range" type="range" min="0" max="800" step="100" value="100">
+          </p>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <input id="filter-form-radio_0" type="radio">
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <input id="filter-form-checkbox_chokolate" type="checkbox">
+          </fieldset>
+        </form>
       </section>
 
       <section class="catalog-products products">
