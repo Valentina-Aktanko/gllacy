@@ -46,3 +46,22 @@ a {
   line-height: 24px;
   color: #ffffff;
 }
+
+.main-nav a {
+  color: #ffffff;
+}
+
+.site-nav,
+.user-nav,
+.submenu {
+  list-style: none;
+}
+
+.site-nav {
+  line-height: 18px;
+}
+
+.user-nav {
+  font-size: 14px;
+  line-height: 16px;
+}
