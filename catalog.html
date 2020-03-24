@@ -19,8 +19,8 @@
           <a href="index.html">Главная</a>
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link_current" href="#">Каталог</a>
-          <ul class="site-nav__sub-menu sub-menu">
+          <a class="site-nav__link site-nav__link_current">Каталог</a>
+          <ul class="site-nav__sub-menu sub-menu visually-hidden">
             <li class="sub-menu__item sub-menu__item_group">
               <a class="sub-menu__link sub-menu__link_group">Новинки</a>
             </li>
@@ -54,7 +54,7 @@
       <li class="user-nav__item">
         <a class="user-nav__link" href="#">Вход</a>
       </li>
-      <li class="user-nav__item user-nav__cart-empty">
+      <li class="user-nav__item user-nav__cart-full">
         <a class="user-nav__link" href="#">Пусто</a>
       </li>
     </ul>
@@ -64,108 +64,80 @@
       <a class="header-contacts__phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
     </p>
   </header>
-  <div class="container">
-    <header class="main-header">
-      <nav class="main-nav">
-        <ul class="main-nav__site-nav site-nav">
-          <li class="site-nav__item site-nav__item--current">
-            <a href="#">Каталог</a>
-            <ul class="site-nav__sub-menu sub-menu">
-              <li class="sub-menu__item sub-menu__item--group">Новинки</li>
-              <li class="sub-menu__item sub-menu__item--current"><a>Сливочное</a></li>
-              <li class="sub-menu__item"><a href="#">Щербеты</a></li>
-              <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
-              <li class="sub-menu__item"><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="site-nav__item"><a href="#">Доставка и оплата</a></li>
-          <li class="site-nav__item"><a href="#">О Компании</a></li>
-        </ul>
-        <ul class="main-nav__user-nav user-nav">
-          <li class="user-nav__item"><a href="#">Поиск</a></li>
-          <li class="user-nav__item"><a href="#">Вход</a></li>
-          <li class="user-nav__item user-nav__cart-full"><a href="#">2 товара</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-
-      <h1 class="page-title">Сливочное мороженое</h1>
-
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-        <li class="breadcrumbs__item breadcrumbs__item--current"><a>Сливочное</a></li>
-      </ul>
-
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-          <p>
-            <label for="filter-form-select">Сортировка:</label>
-            <select id="filter-form-select" name="filter-form-select">
-              <option value="по популярности" selected>по популярности</option>
-              <option value="сначала недорогие">сначала недорогие</option>
-              <option value="сначала дорогие">сначала дорогие</option>
-              <option value="по жирности">по жирности</option>
-            </select>
-          </p>
-          <p>
-            <label for="filter-form-range">Цена: 100 руб. – 500 руб.</label>
-            <input id="filter-form-range" type="range" min="0" max="800" step="100" value="100">
-          </p>
-          <fieldset>
-            <legend>Жирность:</legend>
+  <main class="container">
+    <h1 class="page-title">Сливочное мороженое</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+      <li class="breadcrumbs__item breadcrumbs__item--current"><a>Сливочное</a></li>
+    </ul>
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
+        <p>
+          <label for="filter-form-select">Сортировка:</label>
+          <select id="filter-form-select" name="filter-form-select">
+            <option value="по популярности" selected>по популярности</option>
+            <option value="сначала недорогие">сначала недорогие</option>
+            <option value="сначала дорогие">сначала дорогие</option>
+            <option value="по жирности">по жирности</option>
+          </select>
+        </p>
+        <p>
+          <label for="filter-form-range">Цена: 100 руб. – 500 руб.</label>
+          <input id="filter-form-range" type="range" min="0" max="800" step="100" value="100">
+        </p>
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li class="filter-form__option">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="0" id="filter-fat-content-0">
+              <label for="filter-fat-content-0">0%</label>
+            </li>
+            <li class="filter-form__option">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="less 10" id="filter-fat-content-less-10" checked>
+              <label for="filter-fat-content-less-10">до 10%</label>
+            </li>
+            <li class="filter-form__option">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="less 30" id="filter-fat-content-less-30">
+              <label for="filter-fat-content-less-30">до 30%</label>
+            </li>
+            <li class="filter-form__option">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="more 30" id="filter-fat-content-more-30">
+              <label for="filter-fat-content-more-30">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
             <ul>
               <li class="filter-form__option">
-                <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="0" id="filter-fat-content-0">
-                <label for="filter-fat-content-0">0%</label>
+                <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="chocolate" id="filter-form-chocolate" checked>
+                <label for="filter-form-chocolate">шоколадные</label>
               </li>
               <li class="filter-form__option">
-                <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="less 10" id="filter-fat-content-less-10" checked>
-                <label for="filter-fat-content-less-10">до 10%</label>
+                <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="sugar" id="filter-form-sugar" checked>
+                <label for="filter-form-sugar">сахарные присыпки</label>
               </li>
               <li class="filter-form__option">
-                <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="less 30" id="filter-fat-content-less-30">
-                <label for="filter-fat-content-less-30">до 30%</label>
+                <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="fruit" id="filter-form-fruit">
+                <label for="filter-form-fruit">фрукты</label>
               </li>
               <li class="filter-form__option">
-                <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="more 30" id="filter-fat-content-more-30">
-                <label for="filter-fat-content-more-30">выше 30%</label>
+                <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="syrup" id="filter-form-syrup">
+                <label for="filter-form-syrup">сиропы</label>
+              </li>
+              <li class="filter-form__option">
+                <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="jam" id="filter-form-jam">
+                <label for="filter-form-jam">джемы</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Наполнители:</legend>
-              <ul>
-                <li class="filter-form__option">
-                  <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="chocolate" id="filter-form-chocolate" checked>
-                  <label for="filter-form-chocolate">шоколадные</label>
-                </li>
-                <li class="filter-form__option">
-                  <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="sugar" id="filter-form-sugar" checked>
-                  <label for="filter-form-sugar">сахарные присыпки</label>
-                </li>
-                <li class="filter-form__option">
-                  <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="fruit" id="filter-form-fruit">
-                  <label for="filter-form-fruit">фрукты</label>
-                </li>
-                <li class="filter-form__option">
-                  <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="syrup" id="filter-form-syrup">
-                  <label for="filter-form-syrup">сиропы</label>
-                </li>
-                <li class="filter-form__option">
-                  <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="jam" id="filter-form-jam">
-                  <label for="filter-form-jam">джемы</label>
-                </li>
-              </ul>
-          </fieldset>
-          <button class="button filter-form__button" type="submit">Применить</button>
-        </form>
-      </section>
-
-      <section class="catalog-products products">
+        </fieldset>
+        <button class="button filter-form__button" type="submit">Применить</button>
+      </form>
+    </section>
+    <section class="catalog-products products">
         <h2 class="visually-hidden">Список товаров каталога</h2>
         <ul class="products__list">
           <li class="products__item">
@@ -229,24 +201,23 @@
             <p class="products__price">420 ₽<span class="products__weight">/кг</span></p>
           </li>
         </ul>
-      </section>
+    </section>
+    <ul class="pagination">
+      <li class="pagination__item pagination__arrow pagination__arrow--prev">
+        <button type="button">Назад</button>
+      </li>
+      <li class="pagination__item pagination__item--current"><a>1</a></li>
+      <li class="pagination__item"><a href="#">2</a></li>
+      <li class="pagination__item"><a href="#">3</a></li>
+      <li class="pagination__item"><a href="#">4</a></li>
+      <li class="pagination__item"><a href="#">5</a></li>
+      <li class="pagination__item pagination__arrow pagination__arrow--next">
+        <button type="button">Вперед</button>
+      </li>
+    </ul>
+  </main>
 
-      <ul class="pagination">
-        <li class="pagination__item pagination__arrow pagination__arrow--prev">
-          <button type="button">Назад</button>
-        </li>
-        <li class="pagination__item pagination__item--current"><a>1</a></li>
-        <li class="pagination__item"><a href="#">2</a></li>
-        <li class="pagination__item"><a href="#">3</a></li>
-        <li class="pagination__item"><a href="#">4</a></li>
-        <li class="pagination__item"><a href="#">5</a></li>
-        <li class="pagination__item pagination__arrow pagination__arrow--next">
-          <button type="button">Вперед</button>
-        </li>
-      </ul>
-    </main>
-
-    <footer class="main-foooter">
+  <footer class="main-foooter container">
       <ul class="social-links main-foooter__social-links">
         <li><a class="social-links__link" href="#" target="_blank">Твиттер</a></li>
         <li><a class="social-links__link" href="#" target="_blank">Инстаграм</a></li>
@@ -265,8 +236,7 @@
         </a>
         <p class="footer-copyright__link">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2020</p>
       </div>
-    </footer>
-  </div>
+  </footer>
 
   <section class="modal modal-cart">
     <h2 class="visually-hidden">Товары в корзине</h2>
