@@ -7,17 +7,66 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="theme-green">
+<body class="page theme-green">
+  <header class="main-header container">
+    <a class="main-header__logo logo" href="index.html">
+      <img src="img/logo.svg" width="154" height="64" alt="Логотип «Глейси»">
+    </a>
+    
+    <nav class="main-header__main-nav main-nav">
+      <ul class="main-nav__site-nav site-nav">
+        <li class="visually-hidden">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link site-nav__link_current" href="#">Каталог</a>
+          <ul class="site-nav__sub-menu sub-menu">
+            <li class="sub-menu__item sub-menu__item_group">
+              <a class="sub-menu__link sub-menu__link_group">Новинки</a>
+            </li>
+            <li class="sub-menu__item sub-menu__item_current">
+              <a class="sub-menu__link sub-menu__link_current">Сливочное</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Щербеты</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="main-header__user-nav user-nav">
+      <li class="user-nav__item">
+        <a class="user-nav__link" href="#">Поиск</a>
+      </li>
+      <li class="user-nav__item">
+        <a class="user-nav__link" href="#">Вход</a>
+      </li>
+      <li class="user-nav__item user-nav__cart-empty">
+        <a class="user-nav__link" href="#">Пусто</a>
+      </li>
+    </ul>
+
+    <p class="main-header__contacts header-contacts">
+      С 10 до 20, ежедневно<br>
+      <a class="header-contacts__phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
+    </p>
+  </header>
   <div class="container">
     <header class="main-header">
-      <p class="main-header__contacts header-contacts">
-        С 10 до 20, ежедневно<br>
-        <a class="header-contacts__phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
-      </p>
       <nav class="main-nav">
-        <a class="main-nav__logo" href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»">
-        </a>
         <ul class="main-nav__site-nav site-nav">
           <li class="site-nav__item site-nav__item--current">
             <a href="#">Каталог</a>

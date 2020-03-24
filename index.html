@@ -8,84 +8,105 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page theme-green">
-  <div class="container">
-    <header class="main-header padding-site">
-      <nav class="main-header__main-nav main-nav">
-        <a class="main-nav__logo logo">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»">
-        </a>
-        <ul class="main-nav__site-nav site-nav">
-          <li  class="site-nav__item">
-            <a href="#">Каталог</a>
-            <ul class="site-nav__sub-menu sub-menu">
-              <li class="sub-menu__item sub-menu__item--group">Новинки</li>
-              <li class="sub-menu__item"><a href="catalog.html">Сливочное</a></li>
-              <li class="sub-menu__item"><a href="#">Щербеты</a></li>
-              <li class="sub-menu__item"><a href="#">Фруктовый лед</a></li>
-              <li class="sub-menu__item"><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="site-nav__item"><a href="#">Доставка и оплата</a></li>
-          <li class="site-nav__item"><a href="#">О Компании</a></li>
-        </ul>
-        <ul class="main-nav__user-nav user-nav">
-          <li class="user-nav__item"><a href="#">Поиск</a></li>
-          <li class="user-nav__item"><a href="#">Вход</a></li>
-          <li class="user-nav__item user-nav__cart-empty"><a href="#">Пусто</a></li>
-        </ul>
-      </nav>
-      <p class="main-header__contacts header-contacts">
-        С 10 до 20, ежедневно<br>
-        <a class="header-contacts__phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
-      </p>
-    </header>
-
-    <h1 class="visually-hidden">Интернет-магазин мороженого «Глэйси»</h1>
-
-    <section class="special-offers container">
-      <h2 class="visually-hidden">Специальные предложения</h2>
-      <ul class="special-offers__list">
-        <li class="special-offers__item">
-          <h3 class="special-offers__title">Крем-брюле и пломбир с малиновым джемом</h3>
-          <p class="special-offers__img-wrapper">
-            <img class="special-offers__img" src="img/slide1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-          </p>
-          <a class="button" href="#">Давайте оба!</a>
+  <header class="main-header container">
+    <a class="main-header__logo logo">
+      <img src="img/logo.svg" width="154" height="64" alt="Логотип «Глейси»">
+    </a>
+    
+    <nav class="main-header__main-nav main-nav">
+      <ul class="main-nav__site-nav site-nav">
+        <li class="visually-hidden">
+          <a>Главная</a>
         </li>
-        <li class="special-offers__item visually-hidden">
-          <h3 class="special-offers__title">Шоколадный пломбир и лимонный сорбет </h3>
-          <p class="special-offers__img-wrapper">
-            <img src="img/slide2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет ">
-          </p>
-          <a class="button" href="#">Давайте оба!</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Каталог</a>
+          <ul class="site-nav__sub-menu sub-menu">
+            <li class="sub-menu__item sub-menu__item_group">
+              <a class="sub-menu__link sub-menu__link_group">Новинки</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Щербеты</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="sub-menu__item">
+              <a class="sub-menu__link" href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
-        <li class="special-offers__item  visually-hidden">
-          <h3 class="special-offers__title">Пломбир с помадкой и клубничный щербет</h3>
-          <p class="special-offers__img-wrapper">
-            <img src="img/slide3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
-          </p>
-          <a class="button" href="#">Давайте оба!</a>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#">О Компании</a>
         </li>
       </ul>
-      <ul class="special-offers__controll slider-controll">
-        <li class="slider-controll__item">
-          <button class="slider-controll__btn slider-controll__btn--active" type="button" id="toggle-theme-green">Первый слайд</button>
-        </li>
-        <li class="slider-controll__item">
-          <button class="slider-controll__btn" type="button" id="toggle-theme-blue">Второй слайд</button>
-        </li>
-        <li class="slider-controll__item">
-          <button class="slider-controll__btn" type="button" id="toggle-theme-pink">Третий слайд</button>
-        </li>
-      </ul>
-    </section>
+    </nav>
 
-  </div>
-  
+    <ul class="main-header__user-nav user-nav">
+      <li class="user-nav__item">
+        <a class="user-nav__link" href="#">Поиск</a>
+      </li>
+      <li class="user-nav__item">
+        <a class="user-nav__link" href="#">Вход</a>
+      </li>
+      <li class="user-nav__item user-nav__cart-empty">
+        <a class="user-nav__link" href="#">Пусто</a>
+      </li>
+    </ul>
+
+    <p class="main-header__contacts header-contacts">
+      С 10 до 20, ежедневно<br>
+      <a class="header-contacts__phone" href="tel:8 812 450-25-25">8 812 450-25-25</a>
+    </p>
+  </header>
 
   <main>
-  
-  
+    <div class="container">
+      <h1 class="visually-hidden">Интернет-магазин мороженого «Глэйси»</h1>
+      
+      <section class="special-offers padding-site">
+        <h2 class="visually-hidden">Специальные предложения</h2>
+        <ul class="special-offers__list">
+          <li class="special-offers__item">
+            <h3 class="special-offers__title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <p class="special-offers__img-wrapper">
+              <img class="special-offers__img" src="img/slide1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+            </p>
+            <a class="button" href="#">Давайте оба!</a>
+          </li>
+          <li class="special-offers__item visually-hidden">
+            <h3 class="special-offers__title">Шоколадный пломбир и лимонный сорбет </h3>
+            <p class="special-offers__img-wrapper">
+              <img src="img/slide2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет ">
+            </p>
+            <a class="button" href="#">Давайте оба!</a>
+          </li>
+          <li class="special-offers__item  visually-hidden">
+            <h3 class="special-offers__title">Пломбир с помадкой и клубничный щербет</h3>
+            <p class="special-offers__img-wrapper">
+              <img src="img/slide3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
+            </p>
+            <a class="button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+        <ul class="special-offers__controll slider-controll">
+          <li class="slider-controll__item">
+            <button class="slider-controll__btn slider-controll__btn--active" type="button" id="toggle-theme-green">Первый слайд</button>
+          </li>
+          <li class="slider-controll__item">
+            <button class="slider-controll__btn" type="button" id="toggle-theme-blue">Второй слайд</button>
+          </li>
+          <li class="slider-controll__item">
+            <button class="slider-controll__btn" type="button" id="toggle-theme-pink">Третий слайд</button>
+          </li>
+        </ul>
+      </section>
+    </div>
     
   
     <section class="promo container">
