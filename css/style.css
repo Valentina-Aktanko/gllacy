@@ -49,11 +49,7 @@ a {
 
   display: flex;
   align-items: center;
-  /* padding-top: 9px; */
-  /* padding-bottom: 9px; */
   margin-top: 9px;
-  
-  outline: 1px solid yellow;
 }
 
 .logo {
@@ -222,8 +218,6 @@ a {
   position: absolute;
   right: 0;
   top: 64px;
-
-  outline: 1px solid orange;
 }
 
 .header-contacts {
@@ -248,7 +242,7 @@ a {
 
 .special-offers {
   position: relative;
-  outline: 1px solid orchid;
+  z-index: -1;
 }
 
 .special-offers__list {
@@ -296,6 +290,7 @@ a {
 }
 
 .button {
+  display: inline-block;
   padding: 12px 22px;
 
   font: inherit;
@@ -348,3 +343,48 @@ a {
   border-radius: 40px;
 }
 
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -240px;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.promo__item_raspberry {
+  background-image: url(../img/bg-raspberries.jpg);
+}
+
+.promo__item_chocolate {
+  background-image: url(../img/bg-chocolate.jpg);
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 43px;
+
+  font-style: 18px;
+}
+
+.promo__button {
+  align-self: flex-end;
+  margin-bottom: 7px;
+}
