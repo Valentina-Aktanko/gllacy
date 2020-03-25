@@ -393,13 +393,10 @@ a {
   margin-bottom: 7px;
 }
 
-.products {
-  margin-bottom: 40px;
-}
-
 .products__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -418,6 +415,7 @@ a {
 
 .products__title {
   margin: 0;
+  margin-bottom: 40px;
 
   font-size: 16px;
   font-weight: 500;
