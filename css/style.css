@@ -244,7 +244,6 @@ a {
 
 .special-offers {
   position: relative;
-  z-index: -1;
 }
 
 .special-offers__list {
@@ -276,6 +275,9 @@ a {
   line-height: 60.35px;
 }
 .special-offers__img-wrapper {
+  position: relative;
+  z-index: -1;
+
   margin: 0;
 }
 
