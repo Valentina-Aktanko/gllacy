@@ -72,25 +72,27 @@
         <h2 class="visually-hidden">Специальные предложения</h2>
         <ul class="special-offers__list">
           <li class="special-offers__item">
-            <h3 class="special-offers__title">Крем-брюле и пломбир с малиновым джемом</h3>
+            <div class="special-offers__text-wrapper">
+              <h3 class="special-offers__title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button button_big" href="#">Давайте оба!</a>
+            </div>
             <p class="special-offers__img-wrapper">
               <img class="special-offers__img" src="img/slide1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
             </p>
-            <a class="button" href="#">Давайте оба!</a>
           </li>
           <li class="special-offers__item visually-hidden">
             <h3 class="special-offers__title">Шоколадный пломбир и лимонный сорбет </h3>
+            <a class="button button_big special-offers__button" href="#">Давайте оба!</a>
             <p class="special-offers__img-wrapper">
               <img src="img/slide2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет ">
             </p>
-            <a class="button" href="#">Давайте оба!</a>
           </li>
           <li class="special-offers__item  visually-hidden">
             <h3 class="special-offers__title">Пломбир с помадкой и клубничный щербет</h3>
+            <a class="button button_big special-offers__button" href="#">Давайте оба!</a>
             <p class="special-offers__img-wrapper">
               <img src="img/slide3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
             </p>
-            <a class="button" href="#">Давайте оба!</a>
           </li>
         </ul>
         <ul class="special-offers__controll slider-controll">
@@ -105,7 +107,6 @@
           </li>
         </ul>
     </section>
-    
   
     <section class="promo container">
       <h2 class="visually-hidden">Промо-акции</h2>
@@ -166,26 +167,29 @@
       </ul>
     </section>
 
-    <article class="news">
-      <h2 class="news__title">Новое в нашем блоге</h2>
-      <a class="news__link" href="#" target="_blank">10 способов сервировки<br>
-        фруктовых щербетов к<br>
-        столу</a>
-    </article>
+    <div class="index-columns">
+      <article class="news">
+        <h2 class="news__title">Новое в нашем блоге</h2>
+        <a class="news__link" href="#" target="_blank">10 способов сервировки<br>
+          фруктовых щербетов к<br>
+          столу</a>
+      </article>
 
-    <section class="subscribe">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <p class="subscribe__text">
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-      </p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label class="visually-hidden" for="subscribe-form-email">Электронная почта</label>
-          <input id="subscribe-form-email" type="email" name="subscribe-form-email" value="" placeholder="Электронная почта">
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="subscribe__text">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label class="visually-hidden" for="subscribe-form-email">Электронная почта</label>
+            <input id="subscribe-form-email" type="email" name="subscribe-form-email" value="" placeholder="Электронная почта">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+
 
     <section class="contacts">
       <h2 class="visually-hidden">Как до нас добраться</h2>
