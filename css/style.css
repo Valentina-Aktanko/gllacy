@@ -63,9 +63,22 @@ a {
   flex-wrap: wrap;
   
   margin: 0;
+  margin-left: 10px;
   padding: 0;
   list-style: none;
 }
+
+.site-nav__item {
+  position: relative;
+
+  padding: 5px 0;
+}
+
+.site-nav__item:hover .sub-menu {
+  /* .site-nav__link:focus-within ~ .sub-menu { */
+  visibility: visible;
+}
+  
 
 .site-nav__link {
   display: inline-block;
@@ -106,14 +119,13 @@ a {
   box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
-/* .site-nav__link:hover > .sub-menu,
-.site-nav__link:focus-within > .sub-menu {
-  visibility: visible;
-} */
-
 .sub-menu {
   position: absolute;
+  top: 42px;
+  left: -7px;
+  visibility: hidden;
 
+  min-width: 143px;
   margin: 0;
   padding: 3px 0;
 
