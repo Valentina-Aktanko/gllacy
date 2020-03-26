@@ -396,16 +396,13 @@ a {
   margin-bottom: 7px;
 }
 
-.products.container {
-  padding: 0 13px;
-}
-
 .products__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
-  padding-top: 45px;
 
   list-style: none;
 }
@@ -416,21 +413,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 293px;
-  margin-top: -43px;
-  padding: 6px 13px;
-  box-sizing: border-box;
-  
-  border-radius: 5px;
-}
-
-.products__item:hover {
-  background-color: rgba(248, 247, 244, 0.2);
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-}
-
-.products__item:hover .products__button {
-  visibility: visible;
+  width: 267px;
 }
 
 .products__wrapper {
@@ -441,8 +424,7 @@ a {
 
 .products__title {
   margin: 0;
-  margin-bottom: 17px;
-
+  
   font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
@@ -454,22 +436,22 @@ a {
 .products__img {
   position: relative;
   z-index: -1;
-
+  
   order: -1;
   width: 267px;
   height: 267px;
   margin-bottom: 15px;
-
+  
   border-radius: 50%;
 }
 
 .products__price {
   position: absolute;
-  top: 220px;
-  left: 13px;
-
+  top: 214px;
+  left: 0;
+  
   margin: 0;
-
+  
   font-size: 45px;
   line-height: 50px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -481,16 +463,45 @@ a {
 }
 
 .products__button {
-
-  visibility: hidden;
   margin-bottom: 20px;
+}
+
+.products__hover-content {
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  z-index: 1;
+  
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 293px;
+  padding: 6px 13px;
+  box-sizing: border-box;
+  
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.products__hover-content .products__price {
+  top: 220px;
+  left: 13px;
+}
+
+.products__hover-content .products__title {
+  margin-bottom: 17px;
+}
+
+.products__item:hover .products__hover-content {
+  display: flex;
 }
 
 .features {
   padding: 25px 20px;
-
+  
   color: #323232;
-
+  
   background-color: #eee1c6;
   background-image: url(../img/bg-wafer.jpg);
   border-radius: 20px;
@@ -519,6 +530,4 @@ a {
   box-sizing: border-box;
 
   font-weight: 400;
-
-  /* outline: 1px solid black; */
 }
