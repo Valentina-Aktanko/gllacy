@@ -401,7 +401,6 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
@@ -424,6 +423,7 @@ a {
 
 .products__title {
   margin: 0;
+  margin-bottom: 40px;
   
   font-size: 16px;
   font-weight: 500;
