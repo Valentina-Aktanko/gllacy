@@ -365,7 +365,7 @@ a {
 
   background-position: top center;
   background-repeat: no-repeat;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .promo__item_raspberry {
@@ -484,4 +484,41 @@ a {
 
   visibility: hidden;
   margin-bottom: 20px;
+}
+
+.features {
+  padding: 25px 20px;
+
+  color: #323232;
+
+  background-color: #eee1c6;
+  background-image: url(../img/bg-wafer.jpg);
+  border-radius: 20px;
+}
+
+.features__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  padding-top: 22px;
+  padding-left: 57px;
+  width: 540px;
+  box-sizing: border-box;
+
+  font-weight: 400;
+
+  /* outline: 1px solid black; */
 }
