@@ -501,6 +501,7 @@ a {
 }
 
 .features {
+  margin-bottom: 40px;
   padding: 25px 20px;
   
   color: #323232;
@@ -533,4 +534,92 @@ a {
   box-sizing: border-box;
 
   font-weight: 400;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.news {
+  width: 560px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+
+  background-color: #fff;
+  background-image: url(../img/bg-strawberry.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.news__title {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font: inherit;
+  font-weight: 500;
+  color: #323232;
+}
+
+.news__link {
+  /* margin-bottom: 60px; */
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.subscribe {
+  width: 560px;
+  padding: 5px 6px;
+  box-sizing: border-box;
+
+  background-color: #e0d6dd;
+  background-image: url(../img/bg-post.svg);
+  border-radius: 20px;
+}
+
+.subscribe__wrapper {
+  padding: 30px 20px;
+
+  background-color: #f7f6f3;
+  border-radius: 20px;
+}
+
+.subscribe__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.subscribe-form__wrapper {
+  margin: 0;
+}
+
+.subscribe-form__input {
+  width: 368px;
+  padding: 8px 14px;
+  margin-right: 10px;
+  box-sizing: border-box;
+
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.subscribe-form__button {
+  padding: 10px 20px;
 }
