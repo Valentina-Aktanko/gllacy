@@ -41,7 +41,8 @@ a {
   margin: 0 auto;
   padding: 0 27px;
   box-sizing: border-box;
-  outline: 1px solid red;;
+  outline: 1px solid red;
+  ;
 }
 
 .main-header {
@@ -65,7 +66,7 @@ a {
 .site-nav {
   display: flex;
   flex-wrap: wrap;
-  
+
   margin: 0;
   padding: 0;
 
@@ -82,7 +83,7 @@ a {
   /* .site-nav__link:focus-within ~ .sub-menu { */
   visibility: visible;
 }
-  
+
 
 .site-nav__link {
   display: inline-block;
@@ -136,7 +137,7 @@ a {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  
+
   list-style: none;
 }
 
@@ -251,7 +252,7 @@ a {
   margin: 0;
   margin-top: -73px;
   padding: 0;
-  
+
   list-style: none;
 }
 
@@ -286,13 +287,13 @@ a {
 .special-offers__controll {
   position: absolute;
   top: 563px;
-} 
+}
 
 .slider-controll {
   display: flex;
   margin: 0;
   padding-left: 0;
-  
+
   list-style: none;
 }
 
@@ -307,11 +308,11 @@ a {
   vertical-align: middle;
   color: #ffffff;
 
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  
+  background-image: -moz-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+  background-image: linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+
   border: none;
   border-radius: 25px;
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -319,26 +320,26 @@ a {
 
 .button:hover {
   background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
-                    -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    -moz-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
-                    -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    -webkit-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: -ms-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
-                    -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    -ms-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
-                    linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  
+    linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+
   box-shadow: 0px 2px 2px 0px #ac1000;
 }
 
 .button:active {
   background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
-                    -moz-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    -moz-linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
-                    -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    -webkit-linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   background-image: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
-                    -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    -ms-linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0%, rgba(0, 0, 0, 0.07) 100%),
-                    linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    linear-gradient(90deg, rgb(242, 104, 67) 0%, rgb(231, 74, 53) 100%);
 
   box-shadow: inset 0px 2px 2px 0px #942718;
 }
@@ -428,7 +429,7 @@ a {
 .products__title {
   margin: 0;
   margin-bottom: 40px;
-  
+
   font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
@@ -439,12 +440,12 @@ a {
 
 .products__img {
   position: relative;
-  
+
   order: -1;
   width: 267px;
   height: 267px;
   margin-bottom: 15px;
-  
+
   border-radius: 50%;
 }
 
@@ -452,9 +453,9 @@ a {
   position: absolute;
   top: 214px;
   left: 0;
-  
+
   margin: 0;
-  
+
   font-size: 45px;
   line-height: 50px;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
@@ -474,14 +475,14 @@ a {
   top: -6px;
   left: -13px;
   z-index: 1;
-  
+
   display: none;
   flex-direction: column;
   align-items: center;
   width: 293px;
   padding: 6px 13px;
   box-sizing: border-box;
-  
+
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -503,9 +504,9 @@ a {
 .features {
   margin-bottom: 40px;
   padding: 25px 20px;
-  
+
   color: #323232;
-  
+
   background-color: #eee1c6;
   background-image: url(../img/bg-wafer.jpg);
   border-radius: 20px;
@@ -578,11 +579,11 @@ a {
   box-sizing: border-box;
 
   background-color: #e0d6dd;
-  background-image: repeating-linear-gradient(135deg, 
-  #f8f7f4 0px, #f8f7f4 7px,
-  #92cdff 7px, #92cdff 14px,
-  #f8f7f4 14px, #f8f7f4 21px,
-  #fe9e90 21px, #fe9e90 28px);
+  background-image: repeating-linear-gradient(135deg,
+      #f8f7f4 0px, #f8f7f4 7px,
+      #92cdff 7px, #92cdff 14px,
+      #f8f7f4 14px, #f8f7f4 21px,
+      #fe9e90 21px, #fe9e90 28px);
   border-radius: 20px;
 }
 
@@ -626,4 +627,56 @@ a {
 
 .subscribe-form__button {
   padding: 10px 20px;
+}
+
+
+.contacts.container {
+  position: relative;
+  padding: 0;
+}
+
+.contacts__img {
+  width: 1200px;
+  height: 430px;
+}
+
+.contacts__text-wrapper {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+
+  width: 302px;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+  
+  background-color: #f1f3f1;
+  border-radius: 25px;
+}
+
+.contacts__text {
+  margin: 0;
+}
+
+.contacts__text-address {
+  margin-bottom: 18px;
+}
+
+.contacts__text-phone {
+  margin-bottom: 24px;
+}
+
+.contacts__address,
+.contacts__phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__button {
+  padding: 10px 28px;
 }
