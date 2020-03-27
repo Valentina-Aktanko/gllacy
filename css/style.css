@@ -263,18 +263,19 @@ a {
 .special-offers__text-wrapper {
   margin: 0;
   position: absolute;
-  top: 395px;
+  top: 390px;
   left: 240px;
 }
 
 .special-offers__title {
   max-width: 673px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-size: 60px;
   line-height: 60.35px;
 }
+
 .special-offers__img-wrapper {
   position: relative;
   z-index: -1;
@@ -350,10 +351,13 @@ a {
 }
 
 .promo {
+  position: relative;
+  z-index: 1;
+
   display: flex;
   justify-content: space-between;
-  margin-top: -230px;
-  margin-bottom: 40px;
+  margin-top: -240px;
+  margin-bottom: 30px;
 }
 
 .promo__item {
@@ -435,7 +439,6 @@ a {
 
 .products__img {
   position: relative;
-  z-index: -1;
   
   order: -1;
   width: 267px;
