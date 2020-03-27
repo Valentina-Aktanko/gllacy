@@ -578,7 +578,11 @@ a {
   box-sizing: border-box;
 
   background-color: #e0d6dd;
-  background-image: url(../img/bg-post.svg);
+  background-image: repeating-linear-gradient(135deg, 
+  #f8f7f4 0px, #f8f7f4 7px,
+  #92cdff 7px, #92cdff 14px,
+  #f8f7f4 14px, #f8f7f4 21px,
+  #fe9e90 21px, #fe9e90 28px);
   border-radius: 20px;
 }
 
