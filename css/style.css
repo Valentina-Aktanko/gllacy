@@ -241,7 +241,8 @@ a {
 
 .header-contacts__phone:hover,
 .header-contacts__phone:focus {
-  border-bottom: 1px solid rgba(173, 189, 180, 0.2);
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .special-offers {
@@ -565,12 +566,16 @@ a {
 }
 
 .news__link {
-  /* margin-bottom: 60px; */
-
   font-size: 24px;
   line-height: 30px;
   color: #323232;
   text-decoration: underline;
+}
+
+.news__link:hover,
+.news__link:active {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .subscribe {
@@ -734,6 +739,12 @@ a {
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
+.documents-links__link:hover,
+.documents-links__link:active {
+  color: #ffbc9e;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
 .documents-links__link:first-child {
   margin-bottom: 4px;
 }
@@ -767,4 +778,11 @@ a {
 .footer-copyright__link {
   color: #fefefe;
   text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-copyright__link:hover,
+.footer-copyright__link:active {
+  color: #ffbc9e;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
