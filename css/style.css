@@ -238,6 +238,33 @@ input[type="radio"].visually-hidden {
   background-color: rgb(248, 247, 244);
 }
 
+.user-nav__search-link {
+  position: relative;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.user-nav__search-link::before {
+  content: '';
+
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  width: 22px;
+  height: 22px;
+  
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-nav__search-link:hover::before,
+.user-nav__search-link:focus::before,
+.user-nav__search-link:active::before {
+  background-image: url("../img/loupe-hover.svg");
+}
+
 .user-nav__login-link {
   position: relative;
   padding-left: 45px;
@@ -256,7 +283,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .user-nav__login-link:hover::before,
 .user-nav__login-link:focus::before,
@@ -398,7 +424,8 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
     -moz-linear-gradient(90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
   background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
