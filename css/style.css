@@ -359,10 +359,24 @@ input[type="radio"].visually-hidden {
 
 .slider-controll {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding-left: 0;
+  width: 80px;
 
   list-style: none;
+}
+
+.slider-controll__btn {
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.slider-controll__btn:hover {
+  background-color: #fff;
 }
 
 .button {
