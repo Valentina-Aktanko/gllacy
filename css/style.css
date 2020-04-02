@@ -239,30 +239,18 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav__search-link {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   width: 32px;
   height: 32px;
 }
 
-.user-nav__search-link::before {
-  content: '';
-
-  position: absolute;
-  top: 7px;
-  left: 8px;
-  width: 22px;
-  height: 22px;
-  
-  background-image: url("../img/loupe.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.user-nav__search-link:hover::before,
-.user-nav__search-link:focus::before,
-.user-nav__search-link:active::before {
-  background-image: url("../img/loupe-hover.svg");
+.user-nav__search-link:hover path,
+.user-nav__search-link:focus path,
+.user-nav__search-link:active path {
+  fill: #000000;
 }
 
 .user-nav__login-link {
@@ -472,7 +460,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   width: 560px;
-  padding: 16px 20px;
+  padding: 15px 20px;
   box-sizing: border-box;
 
   background-position: top center;
@@ -490,7 +478,7 @@ input[type="radio"].visually-hidden {
 
 .promo__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   font-size: 35px;
   line-height: 41px;
