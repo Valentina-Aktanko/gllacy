@@ -220,7 +220,7 @@ input[type="radio"].visually-hidden {
 
 .user-nav__link {
   display: block;
-  padding: 8px 16px;
+  padding: 6px 16px;
   
   font-size: 14px;
   line-height: 16px;
@@ -256,7 +256,6 @@ input[type="radio"].visually-hidden {
 .user-nav__login-link {
   display: flex;
   align-items: center;
-  padding: 6px 16px;
 }
 
 .user-nav__login-link svg {
@@ -270,35 +269,19 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav__cart-link {
-  position: relative;
-  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
 }
 
-.user-nav__cart-link::before {
-  content: '';
-
-  position: absolute;
-  top: 6px;
-  left: 16px;
-  width: 22px;
-  height: 22px;
-  
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.user-nav__cart-link svg {
+  margin-right: 8px;
 }
 
-.user-nav__cart-link_empty::before {
-  background-image: url("../img/basket.svg");
-}
-
-.user-nav__cart-link_empty:hover::before,
-.user-nav__cart-link_empty:focus::before,
-.user-nav__cart-link_empty:active::before {
-  background-image: url("../img/basket-hover.svg");
-}
-
-.user-nav__cart-link_full::before {
-  background-image: url("../img/basket-red.svg");
+.user-nav__cart-link_empty:hover g,
+.user-nav__cart-link_empty:focus g,
+.user-nav__cart-link_empty:active g {
+  fill: #000000;
 }
 
 .main-header__contacts {
