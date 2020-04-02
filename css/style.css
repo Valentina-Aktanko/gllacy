@@ -254,28 +254,19 @@ input[type="radio"].visually-hidden {
 }
 
 .user-nav__login-link {
-  position: relative;
-  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
 }
 
-.user-nav__login-link::before {
-  content: '';
-
-  position: absolute;
-  top: 5px;
-  left: 16px;
-  width: 22px;
-  height: 22px;
-  
-  background-image: url("../img/entrance.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.user-nav__login-link svg {
+  margin-right: 8px;
 }
 
-.user-nav__login-link:hover::before,
-.user-nav__login-link:focus::before,
-.user-nav__login-link:active::before {
-  background-image: url("../img/entrance-hover.svg");
+.user-nav__login-link:hover g,
+.user-nav__login-link:focus g,
+.user-nav__login-link:active g {
+  fill: #000000;
 }
 
 .user-nav__cart-link {
