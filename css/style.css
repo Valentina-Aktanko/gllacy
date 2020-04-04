@@ -212,6 +212,7 @@ input[type="radio"].visually-hidden {
 .user-nav__item {
   position: relative;
   margin-right: 10px;
+  padding: 4px 0;
 }
 
 .user-nav__item:last-child {
@@ -251,6 +252,43 @@ input[type="radio"].visually-hidden {
 .user-nav__search-link:focus path,
 .user-nav__search-link:active path {
   fill: #000000;
+}
+
+.search {
+  position: absolute;
+  right: 0;
+  top: 38px;
+  display: none;
+  /* top: 4px; */
+}
+
+.search-form {
+  width: 310px;
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.search-form__item {
+  margin: 0;
+}
+
+.search-form__input {
+  box-sizing: border-box;
+  width: 310px;
+  padding: 9px 14px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.user-nav__item:hover .search {
+  display: block;
 }
 
 .user-nav__login-link {
@@ -799,6 +837,15 @@ input[type="radio"].visually-hidden {
   height: 32px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+}
+
+.social__btn:hover path,
+.social__btn:hover g,
+.social__btn:focus path,
+.social__btn:focus g,
+.social__btn:active path,
+.social__btn:active g {
+  fill: #ffffff;
 }
 
 .main-foooter__documents-links {
