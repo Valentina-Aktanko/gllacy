@@ -543,6 +543,8 @@ input[type="radio"].visually-hidden {
   width: 61px;
   height: 61px;
   background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .products__list {
@@ -645,7 +647,8 @@ input[type="radio"].visually-hidden {
 
 .features {
   margin-bottom: 40px;
-  padding: 25px 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   color: #323232;
 
@@ -655,6 +658,8 @@ input[type="radio"].visually-hidden {
 }
 
 .features__title {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -671,12 +676,41 @@ input[type="radio"].visually-hidden {
 }
 
 .features__item {
-  padding-top: 22px;
-  padding-left: 57px;
+  position: relative;
+  padding-top: 15px;
+  padding-left: 55px;
   width: 540px;
   box-sizing: border-box;
 
   font-weight: 400;
+}
+
+.features__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item_ice-cream::before {
+  background-image: url(../img/ice-cream.svg);
+}
+
+.features__item_cow::before {
+  background-image: url(../img/cow.svg);
+}
+
+.features__item_eco::before {
+  background-image: url(../img/eco.svg);
+}
+
+.features__item_thermometer::before {
+  background-image: url(../img/thermometer.svg);
 }
 
 .index-columns {
