@@ -59,7 +59,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   display: flex;
   align-items: center;
@@ -347,47 +347,52 @@ input[type="radio"].visually-hidden {
 .header-contacts__phone:focus,
 .header-contacts__phone:active {
   color: #ffbc9e;
-  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .special-offers {
-  position: relative;
+  margin-top: -73px;
+  min-height: 880px;
 }
 
 .special-offers__list {
+  position: relative;
   margin: 0;
-  margin-top: -73px;
   padding: 0;
-
   list-style: none;
 }
 
 .special-offers__item {
-  position: relative;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
   text-align: center;
+  background-color: inherit;
 }
 
-.special-offers__text-wrapper {
-  margin: 0;
-  position: absolute;
-  top: 390px;
-  left: 240px;
+.special-offers__item_active {
+  z-index: 1;
+}
+
+.special-offers__content {
+  position: relative;
+  padding-top: 395px;
 }
 
 .special-offers__title {
-  max-width: 673px;
+  width: 670px;
   margin: 0 auto;
-  margin-bottom: 30px;
-
+  margin-bottom: 25px;
   font-size: 60px;
   line-height: 60.35px;
 }
 
 .special-offers__img-wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: -1;
-
+  width: 100%;
   margin: 0;
+  text-align: center;
 }
 
 .special-offers__controll {
@@ -474,7 +479,7 @@ input[type="radio"].visually-hidden {
 
 .promo {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   display: flex;
   justify-content: space-between;
