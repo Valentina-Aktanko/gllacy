@@ -647,13 +647,15 @@ input[type="radio"].visually-hidden {
 
 .features {
   margin-bottom: 40px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+}
 
+.features__wrapper {
+  padding: 25px 20px;
   color: #323232;
-
   background-color: #eee1c6;
   background-image: url(../img/bg-wafer.jpg);
+  background-repeat: repeat;
+  background-position: 0 0;
   border-radius: 20px;
 }
 
