@@ -398,13 +398,14 @@ input[type="radio"].visually-hidden {
 .special-offers__controll {
   position: absolute;
   top: 563px;
+  z-index: 1;
 }
 
 .slider-controll {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   width: 80px;
 
   list-style: none;
@@ -419,6 +420,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-controll__btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider-controll__btn:active {
+  background-color: #fff;
+}
+
+.slider-controll .slider-controll__btn_active { /* вложеный селектор для его усиления */
   background-color: #fff;
 }
 
