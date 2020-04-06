@@ -75,6 +75,26 @@
           </svg>
           Вход
         </a>
+        <div class="login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p class="login-form__item">
+              <label class="visually-hidden" for="login-form-email">Электронная почта</label>
+              <input class="login-form__input" id="login-form-email" type="email" name="login-form-email" value="" placeholder="Электронная почта">
+           </p>
+           <p class="login-form__item">
+             <label class="visually-hidden" for="login-form-password">Пароль</label>
+             <input class="login-form__input" id="login-form-password" type="password" name="login-form-password" value="" placeholder="Пароль">
+           </p>
+           <div class="login-form__item-wrapper">
+            <button class="button login-form__button" type="submit">Войти</button>
+            <div class="login-form__link-wrapper">
+              <a class="login-form__link" href="#">Забыли пароль?</a>
+              <a class="login-form__link" href="#">Новая регистрация</a>
+            </div>
+           </div>
+          </form>
+        </div>
       </li>
       <li class="user-nav__item">
         <a class="user-nav__link user-nav__cart-link user-nav__cart-link_empty" href="#">
@@ -334,23 +354,6 @@
       <p class="footer-copyright__text">Сделано в <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2020</p>
     </div>
   </footer>
-
-  <section class="modal modal-login">
-    <h2 class="visually-hidden">Личный кабинет</h2>
-    <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-      <p>
-        <label class="visually-hidden" for="login-form-email">Электронная почта</label>
-        <input id="login-form-email" type="email" name="login-form-email" value="" placeholder="Электронная почта">
-     </p>
-     <p>
-       <label class="visually-hidden" for="login-form-password">Пароль</label>
-       <input id="login-form-password" type="password" name="login-form-password" value="" placeholder="Пароль">
-     </p>
-      <button class="button" type="submit">Войти</button>
-      <a class="login-form__link" href="#">Забыли пароль?</a>
-      <a class="login-form__link" href="#">Новая регистрация</a>
-    </form>
-  </section>
 
   <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>

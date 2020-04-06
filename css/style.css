@@ -305,6 +305,60 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
+.login {
+  position: absolute;
+  top: 38px;
+  right: 0;
+}
+
+.login-form {
+  width: 240px;
+  padding: 20px;
+  padding-right: 17px;
+  background-color: rgb(248, 247, 244);
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.login-form__item {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.login-form__input {
+  box-sizing: border-box;
+  width: 240px;
+  padding: 9px 14px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form__item-wrapper {
+  display: flex;
+}
+
+.login-form__button {
+  margin-right: 20px;
+}
+
+.login-form__link-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form__link {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: underline;
+}
+
 .user-nav__cart-link {
   display: flex;
   align-items: center;
