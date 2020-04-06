@@ -800,9 +800,9 @@ input[type="radio"].visually-hidden {
   margin-right: 10px;
   box-sizing: border-box;
 
+  font: inherit;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
 
   border: 1px solid #b2b2b2;
   border-radius: 5px;
@@ -823,35 +823,46 @@ input[type="radio"].visually-hidden {
   top: 62px;
   right: 27px;
 
-  width: 302px;
+  width: 255px;
   padding: 30px 25px;
-  box-sizing: border-box;
+  
+  color: #323232;
+  background-color: #fefefe;
+  border-radius: 25px;
+}
+
+.contacts__address-wrapper,
+.contacts__phone-wrapper {
+  margin: 0;
+}
+
+.contacts__address-wrapper {
+  margin-bottom: 18px;
   
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: #323232;
-  
-  background-color: #f1f3f1;
-  border-radius: 25px;
 }
 
-.contacts__text {
-  margin: 0;
-}
-
-.contacts__text-address {
-  margin-bottom: 18px;
-}
-
-.contacts__text-phone {
-  margin-bottom: 24px;
-}
-
-.contacts__address,
-.contacts__phone {
+.contacts__address {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts__phone-wrapper {
+  margin-bottom: 24px;
+
+  font-style: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contacts__phone {
+  margin: 4px 0;
+
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
 }
 
