@@ -308,6 +308,10 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.user-nav__item:hover .search {
+  display: block;
+}
+
 .search-form {
   width: 310px;
   padding: 20px 15px;
@@ -333,10 +337,6 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
-.user-nav__item:hover .search {
-  display: block;
-}
-
 .user-nav__login-link {
   display: flex;
   align-items: center;
@@ -356,6 +356,11 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 38px;
   right: 0;
+  display: none;
+}
+
+.user-nav__item:hover .login {
+  display: block;
 }
 
 .login-form {
@@ -405,6 +410,13 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #323232;
   text-decoration: underline;
+  text-decoration-color: #b2b2b2;
+}
+
+.login-form__link:hover,
+.login-form__link:active {
+  color: #e84d37;
+  text-decoration-color: #f9cdc4;
 }
 
 .user-nav__cart-link {
@@ -807,7 +819,7 @@ input[type="radio"].visually-hidden {
 .news__link:hover,
 .news__link:active {
   color: #e84d37;
-  text-decoration-color: rgba(232, 77, 55, 0.3);
+  text-decoration-color: #f9cdc4;
 }
 
 .subscribe {
