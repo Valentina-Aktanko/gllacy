@@ -970,15 +970,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.breadcrumbs__item::after {
+.breadcrumbs__item:not(.breadcrumbs__item_current)::after {
   content: '»';
   position: absolute;
   top: 0;
   right: 0;
-}
-
-.breadcrumbs__item_current::after {
-  content: none;
 }
 
 .breadcrumbs__link {
