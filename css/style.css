@@ -950,6 +950,8 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -962,19 +964,26 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs__item {
   position: relative;
-  margin-right: 8px;
-  padding-right: 14px;
+  margin-right: 22px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
 }
 
-.breadcrumbs__item:not(.breadcrumbs__item_current)::after {
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__item::after {
   content: '»';
   position: absolute;
   top: 0;
-  right: 0;
+  right: -14px;
+}
+
+.breadcrumbs__item_current::after {
+  display: none;
 }
 
 .breadcrumbs__link {
