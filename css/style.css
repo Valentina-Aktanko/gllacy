@@ -938,6 +938,7 @@ input[type="radio"].visually-hidden {
 
 .page-title {
   margin: 0;
+  margin-bottom: 18px;
   font-size: 35px;
   line-height: 41px;
 }
@@ -1025,15 +1026,42 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form__select {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+
   padding: 9px 16px;
-  padding-right: 50px;
+  padding-right: 32px;
   font: inherit;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   
   background-color: rgba(255, 255, 255, 0.2);
+  border: none;
   border-radius: 25px;
+}
+
+.filter-form__item-select {
+  position: relative;
+}
+
+.filter-form__item-select::after {
+  content: '';
+
+  position: absolute;
+  top: 41px;
+  left: 168px;
+
+  width: 11px;
+  height: 11px;
+
+  background-image: url(../img/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-form__select:hover {
@@ -1070,8 +1098,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form__fieldset {
-  border: none;
+  margin: 0;
   padding: 0;
+  border: none;
 }
 
 .filter-form__button {
