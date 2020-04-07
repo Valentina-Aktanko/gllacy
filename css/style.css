@@ -1064,6 +1064,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter-form__item-select:hover::after {
+  width: 11px;
+  height: 11px;
+  
+  background-image: url(../img/select-arrow-hover.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-form__select:hover {
   color: #323232;
 }
