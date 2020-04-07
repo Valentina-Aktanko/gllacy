@@ -129,22 +129,22 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
-        <p>
-          <label for="filter-form-select">Сортировка:</label>
-          <select id="filter-form-select" name="filter-form-select">
+        <p class="filter-form__item">
+          <label class="filter-form__label" for="filter-form-select">Сортировка:</label>
+          <select class="filter-form__select" id="filter-form-select" name="filter-form-select">
             <option value="по популярности" selected>по популярности</option>
             <option value="сначала недорогие">сначала недорогие</option>
             <option value="сначала дорогие">сначала дорогие</option>
             <option value="по жирности">по жирности</option>
           </select>
         </p>
-        <p>
-          <label for="filter-form-range">Цена: 100 руб. – 500 руб.</label>
-          <input id="filter-form-range" type="range" min="0" max="800" step="100" value="100">
+        <p class="filter-form__item">
+          <label class="filter-form__label" for="filter-form-range">Цена: 100 руб. – 500 руб.</label>
+          <input class="filter-form__input" id="filter-form-range" type="range" min="0" max="800" step="100" value="100">
         </p>
-        <fieldset>
-          <legend>Жирность:</legend>
-          <ul>
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Жирность:</legend>
+          <ul class="filter-form__list">
             <li class="filter-form__option">
               <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="0" id="filter-fat-content-0">
               <label for="filter-fat-content-0">0%</label>
@@ -163,9 +163,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Наполнители:</legend>
-            <ul>
+        <fieldset class="filter-form__fieldset">
+          <legend class="filter-form__legend">Наполнители:</legend>
+            <ul class="filter-form__list">
               <li class="filter-form__option">
                 <input class="visually-hidden filter-form__input filter-form__checkbox" type="checkbox" name="chocolate" id="filter-form-chocolate" checked>
                 <label for="filter-form-chocolate">шоколадные</label>
