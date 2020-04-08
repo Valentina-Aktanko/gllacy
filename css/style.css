@@ -1111,9 +1111,18 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 36px;
   font-weight: 500;
+  color: #ffffff;
 
   cursor: pointer;
   user-select: none;
+}
+
+.filter-form__label:hover {
+  color: #ffffff;
+}
+
+.filter-form__input:disabled + .filter-form__label {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .filter-form__checkbox + .filter-form__label::before {
@@ -1129,6 +1138,7 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
 }
 
 .filter-form__checkbox:checked + .filter-form__label::before {
@@ -1138,10 +1148,16 @@ input[type="radio"].visually-hidden {
 
   width: 24px;
   height: 20px;
-  
+
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
+}
+
+.filter-form__checkbox:hover + .filter-form__label::before,
+.filter-form__checkbox:checked:hover + .filter-form__label::before {
+  opacity: 1;
 }
 
 .filter-form__radio + .filter-form__label::before {
@@ -1157,6 +1173,7 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
 }
 
 .filter-form__radio:checked + .filter-form__label::before {
@@ -1172,10 +1189,19 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
 }
 
-.filter-form__input:disabled + .filter-form__label {
-  color: rgba(255, 255, 255, 0.4);
+.filter-form__radio:hover + .filter-form__label::before,
+.filter-form__radio:checked:hover + .filter-form__label::before {
+  opacity: 1;
+}
+
+.filter-form__checkbox:disabled + .filter-form__label::before,
+.filter-form__checkbox:disabled:hover + .filter-form__label::before, /*не пойму, почему срабатывает hover на disabled */
+.filter-form__radio:disabled + .filter-form__label::before,
+.filter-form__radio:disabled:hover + .filter-form__label::before { /* по аналогии с checkbox оставлю это здесь, хотя работало и без этого*/
+  opacity: 0.4;
 }
 
 .filter-form__button {
