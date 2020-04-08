@@ -131,11 +131,11 @@
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
         <p class="filter-form__item filter-form__item-select">
           <label class="filter-form__legend" for="filter-form-select">Сортировка:</label>
-          <select class="filter-form__select" id="filter-form-select" name="filter-form-select">
-            <option value="по популярности" selected>по популярности</option>
-            <option value="сначала недорогие">сначала недорогие</option>
-            <option value="сначала дорогие">сначала дорогие</option>
-            <option value="по жирности">по жирности</option>
+          <select class="filter-form__select" id="filter-form-select" name="sorting-by">
+            <option value="popularity" selected>по популярности</option>
+            <option value="inexpensive first">сначала недорогие</option>
+            <option value="expensive first">сначала дорогие</option>
+            <option value="fat">по жирности</option>
           </select>
         </p>
         <p class="filter-form__item">
@@ -146,19 +146,19 @@
           <legend class="filter-form__legend">Жирность:</legend>
           <ul class="filter-form__list">
             <li class="filter-form__option">
-              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="0" id="filter-fat-content-0">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="fat-content" value="0" id="filter-fat-content-0">
               <label class="filter-form__label" for="filter-fat-content-0">0%</label>
             </li>
             <li class="filter-form__option">
-              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="less 10" id="filter-fat-content-less-10" checked>
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="fat-content" value="less 10" id="filter-fat-content-less-10" checked>
               <label class="filter-form__label" for="filter-fat-content-less-10">до 10%</label>
             </li>
             <li class="filter-form__option">
-              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="less 30" id="filter-fat-content-less-30">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="fat-content" value="less 30" id="filter-fat-content-less-30">
               <label class="filter-form__label" for="filter-fat-content-less-30">до 30%</label>
             </li>
             <li class="filter-form__option">
-              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="filter-fat-content" value="more 30" id="filter-fat-content-more-30">
+              <input class="visually-hidden filter-form__input filter-form__radio" type="radio" name="fat-content" value="more 30" id="filter-fat-content-more-30">
               <label class="filter-form__label" for="filter-fat-content-more-30">выше 30%</label>
             </li>
           </ul>
