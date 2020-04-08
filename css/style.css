@@ -1118,6 +1118,7 @@ input[type="radio"].visually-hidden {
 
 .filter-form__checkbox + .filter-form__label::before {
   content: '';
+
   position: absolute;
   top: 8px;
   left: 0;
@@ -1139,6 +1140,36 @@ input[type="radio"].visually-hidden {
   height: 20px;
   
   background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-form__radio + .filter-form__label::before {
+  content: '';
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+  
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-form__radio:checked + .filter-form__label::before {
+  content: '';
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+  
+  background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
