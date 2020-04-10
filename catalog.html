@@ -192,7 +192,7 @@
       </form>
     </section>
 
-    <section class="products">
+    <section class="products products_catalog">
       <h2 class="visually-hidden">Список товаров каталога</h2>
       <ul class="products__list">
         <li class="products__item">
@@ -295,15 +295,25 @@
     </section>
 
     <ul class="pagination">
-      <li class="pagination__item pagination__arrow pagination__arrow--prev">
+      <li class="pagination__item pagination__arrow pagination__arrow_prev">
         <button type="button">Назад</button>
       </li>
-      <li class="pagination__item pagination__item--current"><a>1</a></li>
-      <li class="pagination__item"><a href="#">2</a></li>
-      <li class="pagination__item"><a href="#">3</a></li>
-      <li class="pagination__item"><a href="#">4</a></li>
-      <li class="pagination__item"><a href="#">5</a></li>
-      <li class="pagination__item pagination__arrow pagination__arrow--next">
+      <li class="pagination__item pagination__item__current">
+        <a class="pagination__link">1</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">2</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">4</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">5</a>
+      </li>
+      <li class="pagination__item pagination__arrow pagination__arrow_next">
         <button type="button">Вперед</button>
       </li>
     </ul>
