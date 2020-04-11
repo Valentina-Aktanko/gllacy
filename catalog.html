@@ -138,10 +138,26 @@
             <option value="fat">по жирности</option>
           </select>
         </p>
-        <p class="filter-form__item">
-          <label class="filter-form__legend" for="filter-form-range">Цена: 100 руб. – 500 руб.</label>
-          <input class="filter-form__input" id="filter-form-range" type="range" min="0" max="800" step="100" value="100">
-        </p>
+        <div class="filter-form__item double-range">
+          <div class="double-range__price-controls">
+            <span class="double-range__title">Цена:</span>
+            <label class="visually-hidden" for="double-range-min-price">Минимальная цена</label>
+            <div class="double-range__input-wrapper double-range__input-wrapper_min">
+              <input class="double-range__input" type="text" name="min-price" value="100" id="double-range-min-price" readonly>
+            </div>
+            <label class="visually-hidden" for="double-range-max-price">Максимальная цена</label>
+            <div class="double-range__input-wrapper">
+              <input class="double-range__input" type="text" name="max-price" value="500" id="double-range-max-price" readonly>
+            </div>
+          </div>
+          <div class="double-range__controls">
+            <div class="double-range__scale">
+              <div class="double-range__bar"></div>
+            </div>
+            <div class="double-range__toggle double-range__toggle_min"></div>
+            <div class="double-range__toggle double-range__toggle_max"></div>
+          </div>
+          </div>
         <fieldset class="filter-form__fieldset">
           <legend class="filter-form__legend">Жирность:</legend>
           <ul class="filter-form__list">

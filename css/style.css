@@ -1089,6 +1089,132 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
+.double-range {
+  width: 218px;
+}
+
+.double-range__price-controls {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  padding: 6px 17px;
+}
+
+.double-range__title {
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.double-range__price-controls::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 125px;
+
+  width: 7px;
+  height: 2px;
+
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.double-range__input-wrapper {
+  position: relative;
+  padding-right: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.double-range__input-wrapper_min {
+  margin-right: 17px;
+}
+
+.double-range__input-wrapper::after {
+  content: 'руб.';
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font: inherit;
+}
+
+.double-range__input {
+  width: 27px;
+  padding: 0;
+
+  font: inherit;
+  color: #ffffff;
+  vertical-align: bottom;
+
+  background: none;
+  border: none;
+}
+
+.double-range__controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+}
+
+.double-range__scale {
+  width: 176px;
+  height: 4px;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.double-range__bar {
+  width: 106px;
+  margin-left: 16px;
+  height: 4px;
+
+  background: #ffffff;
+}
+
+.double-range__toggle {
+  position: absolute;
+  top: 8px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.double-range__toggle:hover {
+  top: 7px;
+  border: 9px solid #ffffff;
+}
+
+.double-range__toggle_min {
+  left: 36px;
+}
+
+.double-range__toggle_min:hover {
+  left: 35px;
+}
+
+.double-range__toggle_max {
+  right: 65px;
+}
+
+.double-range__toggle_max:hover {
+  right: 64px;
+}
+
 .filter-form__list {
   display: flex;
   justify-content: flex-start;
