@@ -301,11 +301,16 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
-.search {
+.header-popap {
   position: absolute;
-  right: 0;
   top: 38px;
+  right: 0;
   display: none;
+  z-index: 2;
+}
+
+.search {
+  width: 340px;
 }
 
 .user-nav__item:hover .search {
@@ -313,7 +318,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
-  width: 310px;
   padding: 20px 15px;
   background-color: #f8f7f4;
   border-radius: 6px;
@@ -353,10 +357,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login {
-  position: absolute;
-  top: 38px;
-  right: 0;
-  display: none;
+  width: 277px;
 }
 
 .user-nav__item:hover .login {
@@ -364,7 +365,6 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form {
-  width: 240px;
   padding: 20px;
   padding-right: 17px;
   background-color: rgb(248, 247, 244);
@@ -435,10 +435,93 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
+.user-nav__cart-link_full {
+  position: relative;
+}
+
+.user-nav__item:hover .cart {
+  display: flex;
+}
+
+.cart {
+  flex-direction: column;
+
+  width: 510px;
+  padding: 20px 15px;
+
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: rgb(248, 247, 244);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cart__table {
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccccc9;
+}
+
+.cart__cell {
+  position: relative;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.cart__del-btn {
+  padding-left: 11px;
+  border: none;
+  box-shadow: none;
+}
+
+.cart__del-btn::after {
+  content: '';
+
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  width: 11px;
+  height: 11px;
+
+  background-image: url(../img/cross-small.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+.cart__img {
+  width: 33px;
+  height: 33px;
+  vertical-align: top;
+}
+
+.cart__price {
+  color: #999999;
+}
+
+.cart__total-price {
+  align-self: flex-end;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.cart__button {
+  align-self: flex-end;
+  padding: 10px 15px;
+}
+
 .main-header__contacts {
   position: absolute;
   right: 0;
   top: 64px;
+  z-index: 1;
 }
 
 .header-contacts {

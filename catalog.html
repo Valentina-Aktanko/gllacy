@@ -55,7 +55,7 @@
             <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
           </svg>
         </a>
-        <div class="search">
+        <div class="search header-popap">
           <h2 class="visually-hidden">Поиск по сайту</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="search-form__item">
@@ -75,7 +75,7 @@
           </svg>
           Вход
         </a>
-        <div class="login">
+        <div class="login header-popap">
           <h2 class="visually-hidden">Личный кабинет</h2>
           <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
             <p class="login-form__item">
@@ -106,6 +106,39 @@
           </svg>
           2 товара
         </a>
+        <div class="cart header-popap">
+          <h2 class="visually-hidden">Товары в корзине</h2>
+          <table class="cart__table">
+            <tr class="cart__row">
+              <td class="cart__cell">
+                <button class="cart__del-btn" type="button">
+                  <span class="visually-hidden">Удалить товар</span>
+                </button>
+              </td>
+              <td class="cart__cell">
+                <img class="cart__img" src="img/product1-cart.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              </td>
+              <td class="cart__cell">Пломбир с апельсиновым джемом</td>
+              <td class="cart__cell">1,5 кг х <span class="cart__price">200 руб.</span></td>
+              <td class="cart__cell">300 руб.</td>
+            </tr>
+            <tr class="cart__row">
+              <td class="cart__cell">
+                <button class="cart__del-btn" type="button">
+                  <span class="visually-hidden">Удалить товар</span>
+                </button>
+              </td>
+              <td class="cart__cell">
+                <img class="cart__img" src="img/product2-cart.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              </td>
+              <td class="cart__cell">Клубничный пломбир с присыпкой<br> из белого шоколада</td>
+              <td class="cart__cell">1,5 кг х <span class="cart__price">200 руб.</span></td>
+              <td class="cart__cell">450 руб.</td>
+            </tr>
+          </table>
+          <p class="cart__total-price">Итого: 750 руб.</p>
+          <a class="button cart__button" href="#">Оформить заказ</a>
+        </div>
       </li>
     </ul>
 
@@ -395,28 +428,5 @@
       <p class="footer-copyright__text">Сделано в <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2020</p>
     </div>
   </footer>
-
-  <section class="modal modal-cart">
-    <h2 class="visually-hidden">Товары в корзине</h2>
-    <table class="modal-cart__table">
-      <tr class="modal-cart__row">
-        <td class="modal-cart__col"><button class="cart__del-btn" type="button">Удалить товар</button></td>
-        <td class="modal-cart__col"><img src="img/product1-cart.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-        <td class="modal-cart__col">Пломбир с апельсиновым джемом</td>
-        <td class="modal-cart__col">1,5 кг х <span class="cart__price">200 руб.</span></td>
-        <td class="modal-cart__col">300 руб.</td>
-      </tr>
-      <tr class="modal-cart__row">
-        <td class="modal-cart__col"><button class="cart__del-btn" type="button">Удалить товар</button></td>
-        <td class="modal-cart__col"><img src="img/product2-cart.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-        <td class="modal-cart__col">Клубничный пломбир с присыпкой<br> из белого шоколада</td>
-        <td class="modal-cart__col">1,5 кг х <span class="cart__price">200 руб.</span></td>
-        <td class="modal-cart__col">450 руб.</td>
-      </tr>
-    </table>
-    <p class="cart__total-price">Итого: 750 руб.</p>
-    <a class="button" href="#">Оформить заказ</a>
- </section>
-
 </body>
 </html>
