@@ -472,25 +472,41 @@ input[type="radio"].visually-hidden {
 }
 
 .cart__del-btn {
-  padding-left: 11px;
+  position: relative;
+
+  width: 11px;
+  height: 11px;
+  padding: 0;
+
+  background: none;
   border: none;
   box-shadow: none;
 }
 
+.cart__del-btn::before,
 .cart__del-btn::after {
   content: '';
 
   position: absolute;
   top: 10px;
   left: 1px;
-  width: 11px;
-  height: 11px;
 
-  background-image: url(../img/cross-small.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  width: 13px;
+  height: 1px;
+  top: 5px;
+  left: -1px;
 
+  background-color: #323232;
+  
   cursor: pointer;
+}
+
+.cart__del-btn::before {
+  transform: rotate(45deg);
+}
+
+.cart__del-btn::after  {
+  transform: rotate(-45deg);
 }
 
 .cart__img {
@@ -1711,7 +1727,6 @@ input[type="radio"].visually-hidden {
 .modal__close-btn::before,
 .modal__close-btn::after {
   content: '';
-  /* z-index: 2; */
 
   position: absolute;
   top: 8px;
