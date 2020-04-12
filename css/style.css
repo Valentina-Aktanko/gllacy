@@ -335,10 +335,22 @@ input[type="radio"].visually-hidden {
   font: inherit;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.search-form__input::-webkit-input-placeholder,
+.search-form__input::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+
+.search-form__input:hover {
+  padding: 8px 13px;
+  border: 2px solid rgba(154, 154, 154, 0.52)
 }
 
 .user-nav__login-link {
@@ -384,10 +396,21 @@ input[type="radio"].visually-hidden {
   font: inherit;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.login-form__input::-webkit-input-placeholder,
+.login-form__input::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.login-form__input:hover {
+  padding: 8px 13px;
+  border: 2px solid rgba(154, 154, 154, 0.52)
 }
 
 .login-form__item-wrapper {
@@ -978,16 +1001,27 @@ input[type="radio"].visually-hidden {
 
 .subscribe-form__input {
   width: 368px;
-  padding: 8px 14px;
+  padding: 9px 14px;
   margin-right: 10px;
   box-sizing: border-box;
 
   font: inherit;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
 
   border: 1px solid #b2b2b2;
   border-radius: 5px;
+}
+
+.subscribe-form__input::-webkit-input-placeholder,
+.subscribe-form__input::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.subscribe-form__input:hover {
+  padding: 8px 13px;
+  border: 2px solid rgba(154, 154, 154, 0.52)
 }
 
 .contacts.container {
@@ -1700,16 +1734,6 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
-.modal-feedback {
-  top: 340px;
-  left: 50%;
-  margin-left: -240px;
-
-  width: 430px;
-  padding: 16px 24px;
-  border-radius: 10px;
-}
-
 .modal__close-btn {
   position: absolute;
   top: 15px;
@@ -1744,4 +1768,79 @@ input[type="radio"].visually-hidden {
 
 .modal__close-btn::after  {
   transform: rotate(-45deg);
+}
+
+.modal-feedback {
+  top: 340px;
+  left: 50%;
+  margin-left: -240px;
+  
+  width: 430px;
+  padding: 16px 24px;
+  
+  border-radius: 10px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-form__item {
+  margin: 0;
+  margin-bottom: 20px
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+  width: 267px;
+  padding: 9px 14px;
+  box-sizing: border-box;
+  
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.feedback-form__input::-webkit-input-placeholder,
+.feedback-form__textarea::-webkit-input-placeholder,
+/* .feedback-form__input:-ms-input-placeholder,  Не работает*/
+/* .feedback-form__textarea:-ms-input-placeholder, Не работает */
+.feedback-form__input::placeholder,
+.feedback-form__textarea::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+
+.feedback-form__input:hover,
+.feedback-form__textarea:hover {
+  padding: 8px 13px;
+  border: 2px solid rgba(154, 154, 154, 0.52)
+}
+
+.feedback-form__textarea {
+  width: 428px;
+  height: 135px;
+}
+
+.feedback-form__button {
+  margin-bottom: 10px;
+  align-self: flex-end;
+  padding: 10px 24px;
 }
