@@ -179,7 +179,7 @@ input[type="radio"].visually-hidden {
   width: 0%;
 }
 
-.main-menu__item_active > .main-menu__link {
+.main-menu__item_current > .main-menu__link {
   color: #ffffff;
   background-color: #d07058;
   box-shadow: none;
@@ -237,7 +237,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 }
 
-.sub-menu__item_active > .sub-menu__link {
+.sub-menu__item_current > .sub-menu__link {
   color: #ffffff;
   background-color: #d07058;
 }
@@ -604,7 +604,7 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
 }
 
-.special-offers__item_active {
+.special-offers__item_current {
   z-index: 1;
 }
 
@@ -662,7 +662,7 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
 }
 
-.slider-controll .slider-controll__btn_active { /* вложеный селектор для его усиления */
+.slider-controll__item_current .slider-controll__btn {
   background-color: #fff;
 }
 
@@ -1740,7 +1740,7 @@ input[type="radio"].visually-hidden {
   position: fixed;
   z-index: 4;
 
-  /* display: none; */
+  display: none;
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -1752,6 +1752,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   z-index: 3;
 
+  display: none;
   width: 100%;
   height: 100%;
 
