@@ -1736,16 +1736,6 @@ input[type="radio"].visually-hidden {
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
-.modal {
-  position: fixed;
-  z-index: 4;
-
-  display: none;
-  color: #323232;
-  background-color: #f8f7f4;
-}
-
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1757,6 +1747,19 @@ input[type="radio"].visually-hidden {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: fixed;
+  z-index: 4;
+
+  display: none;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal__close-btn {
