@@ -53,7 +53,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 27px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .button {
