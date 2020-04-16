@@ -1042,10 +1042,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.contacts__img {
+.contacts__img-wrapper {
+  margin: 0;
   width: 1200px;
   height: 430px;
 }
+
+/* .contacts__img {
+} */
 
 .contacts__text-wrapper {
   position: absolute;

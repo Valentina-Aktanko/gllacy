@@ -59,9 +59,8 @@ feedbackForm.addEventListener("submit", function(event) {
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
-    event.preventDefault();
-
     if (popupFeedback.classList.contains("modal-show") && overlay.classList.contains("overlay-show")) {
+      event.preventDefault();
       popupFeedback.classList.remove("modal-show");
       popupFeedback.classList.remove("modal-error");
       overlay.classList.remove("overlay-show");
