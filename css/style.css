@@ -1053,9 +1053,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid rgba(154, 154, 154, 0.52)
 }
 
-.contacts.container {
+.contacts > .container {
   position: relative;
-  padding: 0;
 }
 
 .contacts__img-wrapper {
@@ -1066,7 +1065,7 @@ input[type="radio"].visually-hidden {
 
 .contacts__text-wrapper {
   position: absolute;
-  top: 62px;
+  top: -400px;
   right: 27px;
 
   width: 255px;
