@@ -5,7 +5,6 @@
   100%  { transform: translateY(0);       }
 }
 
-
 @keyframes shake {
   0%, 100%                { transform: translateX(0);     }
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
@@ -615,10 +614,13 @@ input[type="radio"].visually-hidden {
   width: 100%;
   text-align: center;
   background-color: inherit;
+  opacity: 0;
 }
 
 .special-offers__item_current {
   z-index: 1;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .special-offers__content {
