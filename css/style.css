@@ -431,7 +431,7 @@ input[type="radio"].visually-hidden {
 
 .login-form__button {
   margin-right: 20px;
-  padding: 10px 25px;
+  padding: 9px 25px;
 }
 
 .login-form__link-wrapper {
@@ -1716,6 +1716,23 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.documents-links__link-heart {
+  position: relative;
+}
+
+.documents-links__link-heart::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -22px;
+
+  width: 15px;
+  height: 13px;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .documents-links__link:hover,
