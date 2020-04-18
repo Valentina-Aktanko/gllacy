@@ -1250,7 +1250,7 @@ input[type="radio"].visually-hidden {
 .contacts__phone-wrapper {
   margin-bottom: 24px;
 
-  font-style: 14px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
@@ -1261,6 +1261,13 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  color: #323232;
+}
+
+.contacts__phone:hover,
+.contacts__phone:focus,
+.contacts__phone:active {
+  color: #ffbc9e;
 }
 
 .contacts__button {
