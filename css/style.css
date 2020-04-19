@@ -79,9 +79,10 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1200px;
+  min-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 2.3%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
