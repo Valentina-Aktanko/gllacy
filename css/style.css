@@ -873,9 +873,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
@@ -900,6 +897,11 @@ input[type="radio"].visually-hidden {
       -ms-flex-align: center;
           align-items: center;
   width: 267px;
+  margin-right: 26px;
+}
+
+.products__item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .products__item::after {
