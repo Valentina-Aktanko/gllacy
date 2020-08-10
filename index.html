@@ -19,16 +19,26 @@
          webvisor:true
     });
 
-    window.yaParams = {
+    // test visit params
+    var visitParams = {
       'tarif': 'free',
       'nomberOfProjects': 4
     };
-    debugger
+    
+    ym(66146167, 'params', visitParams||{});
 
-    ym(66146167, 'params', window.yaParams||{});
-
+    // test get client ID
     ym(66146167, 'getClientID', function(clientID) {
       console.log(clientID);
+    });
+
+
+    // test user params
+    ym(66146167, 'userParams', {
+      current_plan: "Free",
+      projectsLimit: 5,
+      projectsCount: 4,
+      UserID: 12345
     });
 
   </script>
