@@ -28,22 +28,28 @@
     ym(66146167, 'params', visitParams||{});
 
     // test get client ID
-    let YM_ClientID = null;
     ym(66146167, 'getClientID', function(clientID) {
-      YM_ClientID = clientID;
-    });
-
-
-    // test user params
-    debugger
-    if (YM_ClientID) {
       ym(66146167, 'userParams', {
-        clientID: YM_ClientID,
+        clientID: clientID,
+        userID: 12345,
         current_plan: "Free",
         projectsLimit: 5,
         projectsCount: 4
       });
-    }
+    });
+
+
+    // test user params
+    // debugger
+    // if (clientID) {
+    //   ym(66146167, 'userParams', {
+    //     clientID: clientID,
+    //     userID: 12345,
+    //     current_plan: "Free",
+    //     projectsLimit: 5,
+    //     projectsCount: 4
+    //   });
+    // }
 
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/66146167" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
