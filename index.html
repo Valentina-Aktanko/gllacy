@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -13,45 +14,25 @@
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(66146167, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+
+<!-- Yandex.Metrika userParams, visitParams -->
+  <script type="text/javascript">
+    ym(66325720, 'userParams', {
+      user_id: 1111
     });
 
-    // test visit params
-    var visitParams = {
-      'rate': 'free',
-      'projectsCount': 4
-    };
-
-    ym(66146167, 'params', visitParams||{});
-
-    // test get client ID
-    ym(66146167, 'getClientID', function(clientID) {
-      ym(66146167, 'userParams', {
-        clientID: clientID,
-        userID: 12345,
-        current_plan: "Free",
-        projectsLimit: 5,
-        projectsCount: 4
-      });
-    });
-
-
-    // test user params
-    // debugger
-    // if (clientID) {
-    //   ym(66146167, 'userParams', {
-    //     clientID: clientID,
-    //     userID: 12345,
-    //     current_plan: "Free",
-    //     projectsLimit: 5,
-    //     projectsCount: 4
-    //   });
-    // }
+    window.yaParams = { "Author": 123 };
+    ym(66325720, 'params', window.yaParams||{});
 
   </script>
+  <!-- /Yandex.Metrika userParams, visitParams -->
+
   <noscript><div><img src="https://mc.yandex.ru/watch/66146167" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 </head>
